@@ -14,36 +14,13 @@
   text-decoration: none;
   transition: all 0.2s linear;
 }
+
 html {
   width: 100%;
   height: 100vh;
   background: #edf2fc;
   position: relative;
 }
-/* nav {
-  width: 84%;
-  margin: auto;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  width: 150px;
-  cursor: pointer;
-}
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #606163;
-}
-nav ul li a:hover {
-  color: #1e2885;
-} */
 
 header {
   width: 84%;
@@ -169,61 +146,7 @@ header .navbar a:hover,
   margin-right: 20px;
 }
 .social a:hover {
-  color: #1e2885;
-}
-
-/* Responsive */
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 991px) {
-  header {
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #menu-bar {
-    display: initial;
-  }
-
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background: #1e2885;
-    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
-    padding: 1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  header .navbar a {
-    display: block;
-    border-radius: 0.3rem;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    background: #fff;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrap-contact100 {
-    padding: 72px 15px 65px 15px;
-  }
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: 70%;
-  }
+  color: #fff;
 }
 
 /* About Us */
@@ -285,63 +208,32 @@ section {
   color: #1e2885;
 }
 
-/*****************/
-
-@media (max-width: 992px) {
-  section {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .image {
-    height: 100vh;
-  }
-  .content {
-    height: 100vh;
-  }
-  .content h2 {
-    font-size: 25px;
-    margin-top: 50px;
-  }
-  .content span {
-    margin: 20px 0;
-  }
-  .content p {
-    font-size: 15px;
-  }
-  .links li a {
-    font-size: 14px;
-  }
-  .links {
-    margin: 5px 0;
-  }
-  .links li {
-    padding: 6px 10px;
-  }
-  .icons li i {
-    font-size: 25px;
-  }
-}
-
+/* About us my skill */
 .custom {
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
   column-gap: 2rem;
   width: calc(100% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 30px;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-right: 90px;
+  margin-bottom: 10px;
+  margin-left: 90px;
+  background: #1e2885;
+  border-radius: 15px;
 }
 
 .section-header h2 {
-  font-size: 40px;
-  color: #1e2885;
+  font-size: 30px;
+  color: #fff;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .title-area {
@@ -349,6 +241,8 @@ section {
   text-transform: uppercase;
   color: #606163;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .single-skill {
@@ -411,23 +305,6 @@ section {
 }
 .bar-10 {
   width: 70%;
-}
-
-@media screen and (min-width: 768px) {
-  .wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  section {
-    padding: 3rem 0 2 rem;
-  }
-
-  .custom {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 /* Contact */
@@ -534,6 +411,185 @@ section {
   background: #5029bc;
 }
 
+/* Portofolio */
+.Portofolio {
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px 40px;
+}
+.heading {
+  background: #1e2885;
+  color: #f0f1f8;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 20px 0 20px 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+.heading h1 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+.heading h3 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+.porto-items {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+}
+.porto-items img {
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.porto-items img:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: 2 1fr 50px;
+  grid-row-gap: 15px;
+}
+.details-sub {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub > h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+  text-align: right;
+}
+.details > p {
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #1e2885;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    border-radius: 0.3rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #fff;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 72px 15px 65px 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .image {
+    height: 100vh;
+  }
+  .content {
+    height: 100vh;
+  }
+  .content h2 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .links li a {
+    font-size: 14px;
+  }
+  .links {
+    margin: 5px 0;
+  }
+  .links li {
+    padding: 6px 10px;
+  }
+  .icons li i {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 3rem 0 2 rem;
+  }
+
+  .custom {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 950px) {
   .container {
     width: 90%;
@@ -569,79 +625,4 @@ section {
     width: 100%;
     margin-left: 0;
   }
-}
-
-/* Portofolio */
-.Portofolio {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px 40px;
-}
-.heading {
-  background-color: #cb202d;
-  color: #ffffff;
-  margin-bottom: 30px;
-  padding: 120px 0 30px 0;
-  grid-column: 1/-1;
-  text-align: center;
-}
-.heading > h1 {
-  font-weight: 400;
-  font-size: 30px;
-  letter-spacing: 10px;
-  margin-bottom: 10px;
-}
-.heading > h3 {
-  font-weight: 600;
-  font-size: 22px;
-  letter-spacing: 5px;
-}
-.porto-items {
-  display: grid;
-  position: relative;
-  grid-template-rows: auto 1fr;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin: 0 20px;
-}
-.porto-items img {
-  position: relative;
-  width: 100%;
-  border-radius: 15px 15px 0 0;
-}
-
-.details {
-  padding: 20px 10px;
-  display: grid;
-  grid-template-rows: auto 1fr 50px;
-  grid-row-gap: 15px;
-}
-.details-sub {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.details-sub > h5 {
-  font-weight: 600;
-  font-size: 18px;
-}
-.price {
-  text-align: right;
-}
-.details > p {
-  color: #6f6f6f;
-  font-size: 15px;
-  line-height: 28px;
-  font-weight: 400;
-  align-self: stretch;
-}
-.details > button {
-  background: #1e2885;
-  border-radius: 5px;
-  padding: 10px 18px;
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-  border: 1px solid transparent;
-  transition: all 0.4s ease;
 }
